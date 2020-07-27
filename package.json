@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Brain976/taro-service#readme",
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
     "cz-conventional-changelog": "^3.2.0",
     "husky": "^4.2.5",
@@ -43,6 +44,6 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }  
+    }
   }
 }
