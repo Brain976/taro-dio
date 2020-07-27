@@ -1,0 +1,38 @@
+{
+  "name": "taro-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/request.umd.js",
+  "module": "dist/request.es5.js",
+  "scripts": {
+    "start": "rollup -c rollup.config.js -w",
+    "build": "rollup -c",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brain976/taro-service.git"
+  },
+  "author": "Brain976",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brain976/taro-service/issues"
+  },
+  "homepage": "https://github.com/Brain976/taro-service#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^9.1.1",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "rollup": "^2.23.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
