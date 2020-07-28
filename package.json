@@ -1,9 +1,9 @@
 {
-  "name": "taro-service",
+  "name": "taro-dio",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/request.umd.js",
-  "module": "dist/request.es5.js",
+  "main": "dist/dio.umd.js",
+  "module": "dist/dio.es5.js",
   "scripts": {
     "start": "rollup -c rollup.config.js -w",
     "build": "rollup -c",
