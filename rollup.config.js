@@ -7,7 +7,7 @@ const sourceMaps = require("rollup-plugin-sourcemaps");
 export default {
   input: "src/index.ts",
   output: [
-    { file: pkg.main, format: "umd", sourcemap: true },
+    { file: pkg.main, name: "dio", format: "umd", sourcemap: true },
     { file: pkg.module, format: "es", sourcemap: true },
   ],
   watch: {

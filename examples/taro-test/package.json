@@ -9,6 +9,7 @@
     "css": "none"
   },
   "scripts": {
+    "dev":"node ./server.js",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -44,20 +45,22 @@
     "react": "^16.10.0"
   },
   "devDependencies": {
-    "@types/webpack-env": "^1.13.6",
-    "@types/react": "^16.0.0",
-    "@tarojs/mini-runner": "3.0.5",
     "@babel/core": "^7.8.0",
+    "@tarojs/mini-runner": "3.0.5",
     "@tarojs/webpack-runner": "3.0.5",
-    "babel-preset-taro": "3.0.5",
-    "eslint-config-taro": "3.0.5",
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.8.2",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-react-hooks": "^1.6.1",
-    "stylelint": "9.3.0",
-    "@typescript-eslint/parser": "^2.x",
+    "@types/react": "^16.0.0",
+    "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^2.x",
+    "@typescript-eslint/parser": "^2.x",
+    "babel-preset-taro": "3.0.5",
+    "body-parser": "^1.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-taro": "3.0.5",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "express": "^4.17.1",
+    "stylelint": "9.3.0",
     "typescript": "^3.7.0"
   }
 }

@@ -6,7 +6,8 @@
   "module": "dist/dio.es5.js",
   "scripts": {
     "start": "rollup -c rollup.config.js -w",
-    "build": "rollup -c",
+    "build": "rollup -c rollup.config.js",
+    "prebuild": "rimraf dist",
     "commit": "git-cz"
   },
   "repository": {
@@ -24,6 +25,7 @@
     "@commitlint/config-conventional": "^9.1.1",
     "cz-conventional-changelog": "^3.2.0",
     "husky": "^4.2.5",
+    "rimraf": "^3.0.2",
     "rollup": "^2.23.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
