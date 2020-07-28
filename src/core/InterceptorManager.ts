@@ -1,7 +1,3 @@
-/**
- * 注册拦截器
- */
-
 import { ResolvedFn, RejectedFn } from "../types";
 
 interface Interceptor<T> {
@@ -16,9 +12,6 @@ class InterceptorManager<T> {
     this.interceptors = [];
   }
 
-  /**
-   * 添加一个拦截器
-   */
   use(resolved: ResolvedFn<T>, rejected?: RejectedFn): number {
     this.interceptors.push({
       resolved,
@@ -27,18 +20,12 @@ class InterceptorManager<T> {
     return this.interceptors.length - 1;
   }
 
-  /**
-   * 移除一个拦截器
-   */
   eject(id: number): void {
     if (this.interceptors[id]) {
       this.interceptors[id] = null;
     }
   }
 
-  /**
-   * 遍历所有已注册的拦截器
-   */
   forEach(fn: (interceptor: Interceptor<T>) => void): void {
     this.interceptors.forEach((interceptor) => {
       if (interceptor !== null) {

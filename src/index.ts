@@ -1,9 +1,5 @@
-class Person {
-  sayName() {
-    return "张三";
-  }
-}
+import Dio from "./core/dio";
 
-let person = new Person();
+export * from "./types";
 
-export default person;
+export default Dio;

@@ -1,24 +1,33 @@
-import React, { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.css'
+import React, { Component } from "react";
+import taro from "@tarojs/taro";
+import { View, Text } from "@tarojs/components";
+import "./index.css";
 
 export default class Index extends Component {
+  componentWillMount() {
+    taro
+      .request({
+        url: "http://localhost:8080/base/get",
+        data: { name: "张三", age: 45 },
+      })
+      .then((res) => {
+        console.log(res);
+      });
+  }
 
-  componentWillMount () { }
+  componentDidMount() {}
 
-  componentDidMount () { }
+  componentWillUnmount() {}
 
-  componentWillUnmount () { }
+  componentDidShow() {}
 
-  componentDidShow () { }
+  componentDidHide() {}
 
-  componentDidHide () { }
-
-  render () {
+  render() {
     return (
-      <View className='index'>
+      <View className="index">
         <Text>Hello world!</Text>
       </View>
-    )
+    );
   }
 }
